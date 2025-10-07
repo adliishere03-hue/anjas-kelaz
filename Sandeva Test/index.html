@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VirtuSim Seller</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>VirtuSim Seller Dashboard</h1>
+  </header>
+
+  <main>
+    <section id="balance-section">
+      <button id="btnBalance">Cek Saldo</button>
+      <div id="balanceOutput"></div>
+    </section>
+
+    <section id="price-section">
+      <button id="btnPrice">Daftar Harga</button>
+      <div id="priceOutput"></div>
+    </section>
+
+    <section id="service-section">
+      <button id="btnServices">Layanan & Negara</button>
+      <div id="serviceOutput"></div>
+    </section>
+
+    <section id="order-section">
+      <h2>Order Nomor Virtual</h2>
+      <form id="buyForm">
+        <label>Negara:</label>
+        <select id="country"></select>
+
+        <label>Layanan:</label>
+        <select id="service"></select>
+
+        <button type="submit">Order Nomor</button>
+      </form>
+      <div id="orderOutput"></div>
+    </section>
+
+    <section id="sms-section">
+      <h2>Cek SMS / OTP</h2>
+      <input type="text" id="orderIdForSms" placeholder="Masukkan Order ID">
+      <button id="btnCheckSms">Cek SMS</button>
+      <div id="smsOutput"></div>
+    </section>
+
+    <section id="cancel-section">
+      <h2>Batal Order</h2>
+      <input type="text" id="orderIdCancel" placeholder="Masukkan Order ID">
+      <button id="btnCancel">Batal</button>
+      <div id="cancelOutput"></div>
+    </section>
+
+    <section id="history-section">
+      <button id="btnHistory">Riwayat Order</button>
+      <div id="historyOutput"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 VirtuSim Seller</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
